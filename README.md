@@ -119,18 +119,26 @@ Diseñar e implementar una plataforma ITSM que permita gestionar de manera centr
 
 ---
 
-# ⚙ Arquitectura de Software
+# ⚙ Arquitectura del Sistema
 
-La plataforma implementa:
-
-- Clean Architecture
-- Domain Driven Design (DDD - Light)
-- Event Driven Architecture
 - Microservices
+- Clean Architecture
+- Domain-Driven Design (DDD - Light)
 - Database per Service
-- API Gateway
+- Event-Driven Architecture
+- Repository Pattern
+- Service Layer
+- Factory Pattern
+- Strategy Pattern
+- Observer Pattern
+- Specification Pattern
+- Circuit Breaker
 
 ---
+
+## Mensajería
+
+- RabbitMQ
 
 # 🧩 Patrones de Diseño
 
@@ -302,25 +310,61 @@ GitHub Actions automatiza:
 
 ## Frontend
 
-- React
+- React 19
 - Vite
 - TypeScript
 - TailwindCSS
-- React Query
+- React Router DOM
+- React Query (TanStack Query)
+- React Hook Form
+- Axios
+- Zod
 
 ## Backend
 
-- Django
-- Django REST Framework
+La plataforma está compuesta por múltiples microservicios desarrollados con **NestJS**, siguiendo los principios de **Clean Architecture**, **Domain-Driven Design (DDD)** y una arquitectura **Event-Driven**.
+
+- NestJS
+- TypeScript
+- Prisma ORM
 - PostgreSQL
+- Passport.js
+- JWT
+- Swagger / OpenAPI
+
+# 🧩 Microservicios
+
+| Servicio | Responsabilidad |
+|----------|-----------------|
+| API Gateway | Punto único de entrada y enrutamiento de solicitudes. |
+| Auth Service | Autenticación, autorización y emisión de JWT. |
+| User Service | Gestión de usuarios, roles y permisos. |
+| Ticket Service | Gestión del ciclo de vida de los tickets. |
+| Comment Service | Administración de comentarios y seguimiento. |
+| Notification Service | Envío de notificaciones por eventos. |
+| Dashboard Service | Agregación de métricas e indicadores. |
+| Audit Service | Registro de auditoría y trazabilidad. |
+
+Cada microservicio implementa:
+
+- Repository Pattern
+- Service Layer
+- Factory Pattern
+- Strategy Pattern
+- Observer Pattern
+- Specification Pattern
+- Dependency Injection
+- JWT Authentication
+- Role-Based Access Control (RBAC)
+- Circuit Breaker
+- Database per Service
 
 ## Infraestructura
 
 - Docker
 - Docker Compose
-- RabbitMQ
+- Traefik (API Gateway)
 - Redis
-- Nginx
 
 ## DevOps
 
@@ -329,6 +373,15 @@ GitHub Actions automatiza:
 - Grafana
 - Loki
 - OpenTelemetry
+- Trivy
+- ESLint
+- Prettier
+
+## Testing
+
+- Jest
+- Supertest
+- Playwright
 
 ---
 
@@ -377,6 +430,39 @@ El proyecto se desarrolla por fases.
 
 Actualmente se encuentra en fase de arquitectura y planificación.
 
+---
+# 📂 Estructura del Proyecto
+
+```text
+nexusdesk/
+
+├── apps/
+│   ├── gateway/
+│   ├── auth-service/
+│   ├── user-service/
+│   ├── ticket-service/
+│   ├── comment-service/
+│   ├── notification-service/
+│   ├── dashboard-service/
+│   └── audit-service/
+│
+├── libs/
+│   ├── common/
+│   ├── config/
+│   ├── messaging/
+│   ├── auth/
+│   ├── shared/
+│   └── dto/
+│
+├── frontend/
+│
+├── docs/
+│
+├── docker/
+│
+└── .github/
+    └── workflows/
+```
 ---
 
 # 📄 Licencia
