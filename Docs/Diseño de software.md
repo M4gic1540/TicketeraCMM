@@ -625,11 +625,11 @@ La arquitectura permitirá:
 
 | Decisión | Estado |
 |-|-|
-| Framework Backend | Pendiente |
-| Framework Frontend | Pendiente |
-| Broker eventos | Pendiente |
-| Cloud Provider | Pendiente |
-| Estrategia Multi-Tenant | Pendiente |
+| Framework Backend | NESTJS |
+| Framework Frontend | REACT |
+| Broker eventos | RABBITMQ |
+| Cloud Provider | PENDIENTE |
+| Estrategia Multi-Tenant | PENDIENTE |
 
 ---
 
