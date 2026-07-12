@@ -467,7 +467,13 @@ nexusdesk/
 
 # 📄 Licencia
 
-Este proyecto se distribuye bajo licencia MIT.
+ASDP is released under a custom non-commercial license.
+
+The source code is available for educational, research and portfolio purposes.
+Commercial use, SaaS deployment or redistribution requires explicit permission
+from the copyright holder.
+
+See [LICENSE](LICENSE) for full details.
 
 ---
 

@@ -1,0 +1,75 @@
+Agile Service Desk Platform (ASDP)
+Copyright (c) 2026 Tomás Gonzalez
+
+All rights reserved.
+
+---
+
+## ASDP Software License Agreement
+
+This software, including source code, documentation, designs, and related
+materials (collectively referred to as the "Software"), is the intellectual
+property of the copyright holder.
+
+Permission is granted to:
+
+- View the source code for educational, academic, research, and portfolio
+  evaluation purposes.
+- Fork and modify the Software for personal learning purposes.
+- Use the Software internally for non-commercial testing and evaluation.
+
+Restrictions:
+
+You may NOT:
+
+- Sell, sublicense, or commercially distribute this Software or derivative works.
+- Offer this Software as a commercial product or Software-as-a-Service (SaaS).
+- Remove, modify, or obscure copyright notices.
+- Claim ownership of the original Software or its architecture.
+- Use the Software, trademarks, branding, or documentation as part of another
+  commercial solution without explicit written permission.
+
+Commercial Usage:
+
+Any commercial use, including but not limited to:
+
+- Deployment as a paid service.
+- Integration into commercial products.
+- Redistribution to clients.
+- Offering support or hosting services based on this Software.
+
+requires prior written authorization from the copyright holder.
+
+---
+
+## Contributions
+
+Contributions, improvements, bug fixes, or extensions submitted to this project
+remain subject to this license unless explicitly agreed otherwise.
+
+By contributing, contributors grant permission for their contributions to be
+included and distributed under the terms of this license.
+
+---
+
+## Disclaimer
+
+This Software is provided "AS IS", without warranty of any kind, express or
+implied.
+
+The copyright holder shall not be liable for any claim, damages, or other
+liability arising from the use of this Software.
+
+---
+
+## Attribution
+
+Any public reference, academic work, presentation, or derivative project
+based on this Software must provide appropriate attribution:
+
+"Agile Service Desk Platform (ASDP) - Tomás Gonzalez"
+
+---
+
+Version: 1.0
+Date: 2026
