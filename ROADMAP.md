@@ -312,7 +312,7 @@ Cada servicio tendrá su propia base de datos PostgreSQL.
 ## Docker
 
 - [ ] Dockerfiles
-- [ ] Docker Compose
+- [x] Docker Compose
 
 ---
 
