@@ -1,0 +1,32 @@
+# =====================================================================
+# ASDP - Configuración dinámica de Traefik
+# Reglas de enrutamiento adicionales que no dependen de labels de Docker.
+# Útil para servicios externos, rate limiting global, middlewares, etc.
+# =====================================================================
+
+http:
+  middlewares:
+    asdp-ratelimit:
+      rateLimit:
+        average: 100
+        burst: 50
+
+    asdp-cors:
+      headers:
+        accessControlAllowMethods:
+          - GET
+          - POST
+          - PUT
+          - PATCH
+          - DELETE
+          - OPTIONS
+        accessControlAllowOriginList:
+          - "http://localhost:5173"
+        accessControlAllowHeaders:
+          - "Authorization"
+          - "Content-Type"
+        accessControlMaxAge: 100
+
+  # Los routers de cada microservicio se definen vía labels de Docker
+  # directamente en docker-compose.yml (ver comentario al final de ese
+  # archivo). Este archivo queda para reglas transversales.
