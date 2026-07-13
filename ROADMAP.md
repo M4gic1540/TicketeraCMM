@@ -38,15 +38,15 @@ Definir completamente el producto antes de comenzar el desarrollo.
 - [x] BRD
 - [x] PRD
 - [x] FRD
-- [ ] SDD
-- [ ] Casos de uso
+- [x] SDD
+- [x] Casos de uso
 - [ ] Diagramas UML
 - [ ] Modelo de dominio
 - [ ] Event Storming
 - [ ] C4 Model
-- [ ] Arquitectura de Microservicios
+- [x] Arquitectura de Microservicios
 - [ ] Diseño Base de Datos
-- [ ] API Contract
+- [x] API Contract
 
 ---
 
